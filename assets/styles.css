@@ -7,3 +7,12 @@
 @media(max-width:780px){.case-grid{grid-template-columns:minmax(0,1fr)}.case-left,.case-detail,.case-step-list,.lab-sidebar,.exercise-tabs,.filter-scroll{min-width:0;max-width:100%}.case-step-list,.exercise-tabs,.filter-scroll{overscroll-behavior-inline:contain}}
 [hidden]{display:none!important}
 @media(max-width:420px){.visual-topline span:last-child{display:none}}
+
+/* Featured access to Strasbourg's in-depth lesson */
+.lesson-entry{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px 30px;align-items:center;margin-top:25px;background:#fffefa;border:1px solid #d0c6b5;border-left:4px solid #b89d76;padding:26px 30px}
+.lesson-entry-index{grid-column:1/-1;font:10px Arial,sans-serif;letter-spacing:1.2px;color:#94744f;font-weight:700}
+.lesson-entry-text{min-width:0}
+.lesson-entry-text h3{font-size:19px;font-weight:600;line-height:1.6;margin:0 0 7px}
+.lesson-entry-text p{color:#6a7871;font-size:12px;line-height:1.85;margin:0}
+.lesson-entry .btn{font-size:12px;min-width:198px;gap:17px}
+@media(max-width:780px){.lesson-entry{grid-template-columns:1fr;gap:12px;padding:23px 21px}.lesson-entry-index{grid-column:1}.lesson-entry-text h3{font-size:17px}.lesson-entry .btn{width:100%;margin-top:3px}}
