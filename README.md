@@ -6,6 +6,7 @@
 
 - 讲解篇章结构：空间路线 + 时间叙事；五项讲解功能。
 - 法国高校范例：Université de Strasbourg 的官方历史校园自助导览材料。
+- [法国高校精读单元](parcours/strasbourg/)：8页官方手册的七站结构分析、书面指令与现场讲解的语体转换、5类表达、互动判断、排序练习、75秒法语讲解与 SISU 迁移练习。
 - 功能分类法语表达库：中文释义、检索、复制。
 - SISU 校史馆五组视译实训：原稿、信息层级标注、准备计时、法语口头示范、可选本地录音。
 - 自评量表：信息、层级、参观者导向、法语自然度、连续性。
@@ -15,14 +16,14 @@
 
 直接打开 `index.html`。部分浏览器出于安全原因，使用 `file://` 时会限制麦克风；部署到 HTTPS GitHub Pages 后可正常请求设备权限。其余功能不依赖在线服务。
 
-## GitHub Pages 发布
+## 在线网站
 
-1. 在 https://github.com/new 新建 **public** 仓库 `visite-guidee`，建议不要预先生成 README、许可证或 `.gitignore`（方便一次性上传）。
-2. 上传此文件夹中的 `index.html`、`assets/`、`.nojekyll` 和 `README.md` 到仓库根目录。
-3. 在仓库 **Settings → Pages → Build and deployment** 中选择 **Deploy from a branch**、`main`、`/(root)`，保存。
-4. 等待构建完成后访问 `https://<你的 GitHub 用户名>.github.io/visite-guidee/`。
+- 课程首页：https://chenfangchongqing-dev.github.io/visite-guidee/
+- 斯特拉斯堡大学精读：https://chenfangchongqing-dev.github.io/visite-guidee/parcours/strasbourg/
 
-此站点无第三方跟踪、无外部字体或 JS 库。录音、练习草稿、评分等不会提交到服务器；笔记与评分保存在用户浏览器 localStorage。下载的录音仅在本机处理。更换浏览器或清除浏览器数据会丢失本地记录。
+网站发布配置：仓库 Settings → Pages → Deploy from a branch → main / (root)。
+
+本站不依赖第三方跟踪、外部字体或 JS 库。录音、草稿、自评信息都保留在学生自己的浏览器或设备上，不上传到服务器。更换浏览器或清除浏览数据会丢失本地记录。
 
 ## 编辑内容
 
@@ -30,6 +31,9 @@
 - `assets/styles.css`：响应式样式。
 - `assets/content.js`：范例阅读、表达库、学生实训材料与教师示范译文。
 - `assets/app.js`：筛选、标注、计时、录音、反馈等交互逻辑。
+- `parcours/strasbourg/index.html`：法国大学原始材料精读单元的页面内容。
+- `parcours/strasbourg/lesson.css`：该单元的响应式样式。
+- `parcours/strasbourg/lesson.js`：功能识别、顺序重组、口头计时与本机笔记。
 
 新增校史馆练习时，编辑 `assets/content.js` 中的 `exercises` 数组，沿用已有字段即可。
 
